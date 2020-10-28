@@ -1,0 +1,39 @@
+//Arslan Sadovinov: 09-063. Homework for Islamurov islam Rinatovich 20.10.20.
+//№ 1.1b
+
+#include<iostream>
+#include<cmath>
+#include<climits>
+
+using namespace std;
+
+int main(){
+	int n, j, i; 
+	double g, b, d, x;
+	n = 10;
+	b = -0.5;
+	d = 0.2;
+	double a[3]={-19.2, 1.51, 7}; //By condition...
+	double max, min;
+
+	for (j = 0; j < 3; j++){
+	 max = INT_MIN;
+	 min = INT_MAX;
+	cout << "a" << j << endl;
+	for (i = 0; i < n; i++){
+		x = b + i * d
+		if (a >= 0)
+			g = x * cos(a[j] - x + 1);
+		else
+			g = 2 * cos(a[j] + x);
+			if (max < abs(g))
+				max = abs(g);
+			if (min > abs(g))
+				min = abs(g);
+			cout << "F (a" << j << ",x[" << i << "]) = " << g << endl;
+		}
+		cout << "Maximum = " << max << endl;
+		cout <<"Minimum = "<< min<< endl;
+	}
+	return 0;
+}
