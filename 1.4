@@ -1,0 +1,22 @@
+//Arslan Sadovinov: 09-063. Homework for Islamurov Islam Rinatovich 31.10.20.
+//№ 1.4
+
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+int main(){
+double S, g;
+double x[3] = {-0.4, 2.4, 5.0};
+int  i, j;
+int n = 23;
+	for (i = 0; i < 3; i++){
+		g = 1;
+		S = 3.5 * sin(x[i]) * sin(x[i]) - 2.7 * sin(x[i]) + 1;
+		for (j = 0; j < n; j++){
+			g = 2 * g / 3 + S / (3 * g * g);
+		}
+		cout << "G of:  (" << S << ", 1.0/3.0) = " << g << endl;
+	}
+	return 0;
+}
