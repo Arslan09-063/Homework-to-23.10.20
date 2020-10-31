@@ -1,0 +1,38 @@
+//Arslan Sadovinov: 09-063. Самостотельная работа for Islamurov Islam Rinatovich 31.10.20.
+//нечет
+
+#include<iostream>
+#include<cmath>
+#include<climits>
+
+using namespace std;
+
+int main() {
+double max, min;
+double m, k, a, g;
+double a[3] = { -0.04, 2, 1.96 };
+int n, j, i;
+n = 9;
+m = 0.05;
+q= -1;
+	for (j = 0; j < 3; j++) {
+	max = INT_MIN;
+	min = INT_MAX;
+	cout << "a" << j << endl;
+	for (i = 0; i < n; i++) {
+		a = k + i * m;
+		if (a >= 0)
+		g = log(1 + 2 * a[j] + a * a) + 1;
+			else
+		g = log(1 + a[j] * a[j] + a * a) - 1;
+		if (max < g * g)
+				max = g * g;
+		if (min > g * g)
+				min = g * g;
+			cout << "F = (a" << j << ", a[" << i << "]) = " << g << endl;
+		}
+		cout << "Maximum = " << max << endl;
+		cout << "Minimum = " << min << endl;
+	}
+  return 0;
+}
