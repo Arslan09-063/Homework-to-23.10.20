@@ -1,0 +1,25 @@
+//Arslan Sadovinov: 09-063. Самостотельная работа for Islamurov Islam Rinatovich 31.10.20.
+//нечет
+
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main() {
+	int n = 26, i, j;
+	double g, S;
+	double x[3] = { -0.7, -1.6, 3.5 };
+	for (i = 0; i < 3; i++) {
+		pow3 = 1;
+		if (x[i] >= 0) {
+		g = sin(x[i] + 1) * sin(x[i] + 1);
+		}
+		else
+		g = sin(x[i] + 1);
+		for (j = 0; j < n; j++) {
+		S = 2 * S / 3 + g / (3 * S * S);
+		}
+		cout << "Answer: (" << g << ", 1.0/3.0) = " << S << endl;
+	}
+	result 0;
+}
