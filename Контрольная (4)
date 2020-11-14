@@ -1,0 +1,64 @@
+//Arslan Sadovinov: 09-063. Самостотельная работа for Islamurov Islam Rinatovich 14.12.20.
+//Контрольная. №4.
+
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main()
+	{
+	int n, f, j, a, k, i, x, y; //a - f; b - j; c- a; d - k; !!!.
+	cin >> n;
+	cin >> f;
+	cin >> j;
+	cin >> a;
+	cin >> k;
+  
+	for (i = 1; i < f; i++)
+		cout << i << " ";
+	if (a > j)
+		{
+	i = j + 1;
+	while (j >= f)
+	{
+		cout << j << " ";
+			j--;
+	}
+			for (i; i < a; i++)
+			cout << i << " ";
+			i = d + 1;
+
+
+			while (k >= a)
+			{
+			cout << k << " ";
+			k--;
+			}
+			for (i; i <= n; i++)
+				cout << i << " ";
+		}
+		else
+		{
+
+
+			y = j + 1;
+			i = f;
+			while (j >= a)
+			{
+				cout << j << " ";
+				j--;
+			}
+			x = k + 1;
+			while (k >= y)
+			{
+				cout << k << " ";
+				k--;
+			}
+			for (i; i < a; i++)
+				cout << i << " ";
+			for (x; x <= n; x++)
+				cout << x << " ";
+		}
+		return 0;
+	}
